@@ -176,10 +176,23 @@ Use the checklists in `06-Practice-Questions/README.md` to track:
 ## Prerequisites
 
 ### Required
-- A computer (Windows, Mac, or Linux)
-- Text editor (VS Code recommended) or IDE
-- GCC compiler installed
+- A computer (Windows recommended for Turbo C++)
+- **Turbo C++ IDE** (recommended for beginners) or modern compiler (GCC)
 - Basic computer literacy
+
+### Compiler Options
+
+**For College Students (Recommended): Turbo C++**
+- Simple and lightweight IDE
+- Perfect for learning C basics
+- Widely used in Indian colleges
+- **[Complete Setup Guide →](TURBO_C_SETUP.md)**
+- **[How to Write C in Turbo C++ →](WRITING_C_IN_TURBOC.md)**
+
+**For Advanced Users: GCC/Modern Compilers**
+- Industry-standard compiler
+- Cross-platform support
+- Modern C features
 
 ### No Prior Programming Experience Needed!
 This guide assumes you're starting from scratch.
@@ -250,9 +263,21 @@ This guide assumes you're starting from scratch.
 
 ## Getting Started
 
-### Step 1: Set Up Your Environment
+### Step 1: Set Up Your Compiler
 
-**Install GCC Compiler:**
+**Option A: Turbo C++ (Recommended for Beginners)**
+
+1. **Download Turbo C++ 4.5**
+   - Search "Turbo C++ 4.5 download" or get from college resources
+2. **Install to C:\TurboC++**
+   - Follow the installation wizard
+3. **Launch and Configure**
+   - Double-click Turbo C++ icon
+   - Set include/library directories
+
+**📘 Complete Installation Guide: [TURBO_C_SETUP.md](TURBO_C_SETUP.md)**
+
+**Option B: GCC Compiler (For Advanced Users)**
 
 **Windows:**
 ```bash
@@ -277,14 +302,7 @@ sudo apt install build-essential
 gcc --version
 ```
 
-### Step 2: Set Up Your Editor
-
-**Recommended: Visual Studio Code**
-1. Download from [code.visualstudio.com](https://code.visualstudio.com)
-2. Install C/C++ extension by Microsoft
-3. Configure for C development
-
-### Step 3: Start Learning
+### Step 2: Start Learning
 
 ```bash
 # Clone this repository
@@ -296,7 +314,31 @@ cd 01-Basics
 # Open 01-introduction.md and start reading!
 ```
 
-### Step 4: Write Your First Program
+### Step 3: Write Your First Program
+
+**In Turbo C++:**
+
+1. Open Turbo C++
+2. Press Alt+F → New
+3. Type this code:
+```c
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    clrscr();
+    printf("Hello, World!\n");
+    getch();
+}
+```
+4. Press F2 to save as `hello.c`
+5. Press Alt+F9 to compile
+6. Press Ctrl+F9 to run
+
+**📘 Complete Turbo C++ Tutorial: [WRITING_C_IN_TURBOC.md](WRITING_C_IN_TURBOC.md)**
+
+**With GCC:**
 
 Create `hello.c`:
 ```c
@@ -468,6 +510,8 @@ Track your journey:
 ---
 
 ## Quick Navigation
+
+**Setup Guides**: [Turbo C++ Installation](TURBO_C_SETUP.md) | [Writing C in Turbo C++](WRITING_C_IN_TURBOC.md) | [Learning Roadmap](LEARNING_ROADMAP.md) | [Quick Reference](QUICK_REFERENCE.md)
 
 **Basics**: [Introduction](01-Basics/01-introduction.md) | [Syntax](01-Basics/02-syntax-and-structure.md) | [Variables](01-Basics/03-variables-and-datatypes.md) | [Operators](01-Basics/04-operators.md) | [I/O](01-Basics/05-input-output.md) | [Control](01-Basics/06-control-structures.md)
 
